@@ -148,10 +148,13 @@ where T: std::ops::AddAssign + One
     /// [:ty TokenTree cluster]: ./index.html#ty-tokentree-cluster
     /// [:ty TokenTree cluster sequence]: ./index.html#ty-tokentree-cluster-sequence
     pub unsafe fn unsafe_transition(mut self, tt :TokenTree) -> Self {
+        self.count += T::one();
         self.prev_tt_was_colon = match tt {
             Punct(punct) => (punct.as_char() == ':'),
             Ident(ident) => {
-                if self.prev_tt_was_colon && ident.to_string() == "ty" { self.count += T::one(); }
+                if self.prev_tt_was_colon && ident.to_string() == "ty" {
+                    self.count += T::one();
+                }
                 false
             }
             _ => false,
