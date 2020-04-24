@@ -1,3 +1,4 @@
+#![allow(non_snake_case)]
 #![feature(external_doc)]
 //#![allow(dead_code)]
 
