@@ -1,11 +1,12 @@
 [package]
 name = "TCFSMFTTTCS"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Dmitrii - Demenev <demenev.dmitriy1@mail.ru>"]
 edition = "2018"
-documentation = "https://docs.rs/TCFSMFTTTCS"
 description = "Unsafe, yet fast finite state machine for counting :ty TokenTree clusters in any :ty TokenTree cluster sequence. It works for proc_macro2::TokenStreams too"
+documentation = "https://docs.rs/TCFSMFTTTCS"
 readme = "doc/README.md"
+repository = "https://github.com/JohnScience/TCFSMFTTTCS"
 license = "MIT"
 keywords = ["macro", "macros", "static", "data-structures"]
 categories = ["development-tools::procedural-macro-helpers","data-structures"]
