@@ -1,6 +1,6 @@
 [package]
 name = "TCFSMFTTTCS"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Dmitrii - Demenev <demenev.dmitriy1@mail.ru>"]
 edition = "2018"
 description = "Unsafe, yet fast finite state machine for counting :ty TokenTree clusters in any :ty TokenTree cluster sequence. It works for proc_macro2::TokenStreams too"
