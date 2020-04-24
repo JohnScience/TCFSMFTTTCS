@@ -1,0 +1,6 @@
+# Table of contents
+
+The automation of generation of table of contents requires time which can be spent on the development.
+
+The following ToC generator for md appears to be decent: https://crates.io/crates/markdown-toc
+

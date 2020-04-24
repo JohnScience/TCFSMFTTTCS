@@ -1,0 +1,15 @@
+[counting]: ./struct.TysCountingFSMForTyTtClusterSeq.html#method.get_count
+[designator]: https://doc.rust-lang.org/rust-by-example/macros/designators.html
+[declarative macro]: https://doc.rust-lang.org/book/ch19-06-macros.html#declarative-macros-with-macro_rules-for-general-metaprogramming
+[declarative macro pattern]: ./index.html#declarative-macro-pattern
+[TokenTree]: https://docs.rs/proc-macro2/latest/proc_macro2/enum.TokenTree.html
+[TokenTree sequence]: /index.html#tokentree-sequence
+[TokenStream]: https://docs.rs/proc-macro2/latest/proc_macro2/struct.TokenStream.html
+[Punct]: https://docs.rs/proc-macro2/latest/proc_macro2/enum.TokenTree.html#variant.Punct
+[Ident]: https://docs.rs/proc-macro2/latest/proc_macro2/enum.TokenTree.html#variant.Ident
+[Finite State Machine]: https://en.wikipedia.org/wiki/Finite-state_machine
+[:ty TokenTree cluster]: ./index.html#ty-tokentree-cluster
+[:ty TokenTree cluster sequence]: ./index.html#ty-tokentree-cluster-sequence
+[:ty TokenTree sequence]: ./index.html#ty-tokentree-sequence
+[:ty TokenStream]: ./index.html#ty-tokenstream
+

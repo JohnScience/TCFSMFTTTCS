@@ -1,0 +1,75 @@
+# Dare not to pronounce it
+
+[Finite State Machine] for counting [:ty TokenTree cluster]s in [:ty TokenStream]s
+and other [:ty TokenTree cluster sequence]s
+
+## Definitions, Signs, and Properties
+
+Being maximally fast is the the main goal of this crate. For that reason, mathematical reasoning about
+its performance in conjunction with repeatable benchmarks to prove or refute the theory will be presented.
+Definitions, signs, and properties of the crate will reveal its mathematical foundations.
+
+## Definitions
+
+The terminology widely used in the crate
+
+### TokenTree sequence
+
+[TokenTree sequence], as opposed to the [TokenStream], is a concept and not a particular implementation
+of a sequence of [TokenTree]s
+
+### :ty TokenTree cluster
+
+[:ty TokenTree cluster] is a [TokenTree sequence] that matches [:ty][designator] [designator]
+
+### :ty TokenTree cluster sequence
+
+[:ty TokenTree cluster sequence] is a sequence of [:ty TokenTree cluster]s
+
+### Declarative macro pattern
+
+Declarative macro pattern is a pattern for matching [TokenTree]s in [declarative macros
+/"macros by example"/macro_rules!/plain macros][declarative macro]. For example, `$($type:ty),*`
+pattern. Learn more about [declarative macro pattern]s and [designator]s.
+
+### :ty TokenTree sequence
+
+[:ty TokenTree sequence]
+
+### :ty TokenStream
+
+[:ty TokenStream] is a [TokenStream] that matches `$($type:ty),*`
+[declarative macro pattern]
+
+## Signs
+
+Features of particular entities that allow to claim that they are in fact also have the propety of
+being something else. For example, if the left operand of a summation is 1 and the right operand of the
+summation is 1, we can guarantee that the result of the operation is 2.
+
+### Signs of [:ty TokenTree cluster]s` boundaries in a [:ty TokenTree sequence]
+
+In a non-empty [:ty TokenTree sequence], the first [:ty TokenTree cluster] starts
+at index 0 and each consequent occurence of a ":" [TokenTree]::[Punct] followed by a "ty"
+[TokenTree]::[Ident] marks the end of the current [:ty TokenTree cluster] and, if there are
+more [TokenTree]s, is immediately followed by the beginning of the next [:ty TokenTree cluster].
+In an empty [:ty TokenTree sequence], there are no [:ty TokenTree cluster]s.
+
+## Properties
+
+None
+
+[counting]: ./struct.TysCountingFSMForTyTtClusterSeq.html#method.get_count
+[designator]: https://doc.rust-lang.org/rust-by-example/macros/designators.html
+[declarative macro]: https://doc.rust-lang.org/book/ch19-06-macros.html#declarative-macros-with-macro_rules-for-general-metaprogramming
+[declarative macro pattern]: ./index.html#declarative-macro-pattern
+[TokenTree]: https://docs.rs/proc-macro2/latest/proc_macro2/enum.TokenTree.html
+[TokenTree sequence]: /index.html#tokentree-sequence
+[TokenStream]: https://docs.rs/proc-macro2/latest/proc_macro2/struct.TokenStream.html
+[Punct]: https://docs.rs/proc-macro2/latest/proc_macro2/enum.TokenTree.html#variant.Punct
+[Ident]: https://docs.rs/proc-macro2/latest/proc_macro2/enum.TokenTree.html#variant.Ident
+[Finite State Machine]: https://en.wikipedia.org/wiki/Finite-state_machine
+[:ty TokenTree cluster]: ./index.html#ty-tokentree-cluster
+[:ty TokenTree cluster sequence]: ./index.html#ty-tokentree-cluster-sequence
+[:ty TokenTree sequence]: ./index.html#ty-tokentree-sequence
+[:ty TokenStream]: ./index.html#ty-tokenstream

@@ -1,0 +1,8 @@
+[counting]: ./struct.TysCountingFSMForTyTtClusterSeq.html#method.get_count
+[TokenStream]: https://docs.rs/proc-macro2/latest/proc_macro2/struct.TokenStream.html
+[Signs of :ty TokenTree clusters` boundaries in :ty TokenTree sequence]: index.html#signs-of-ty-tokentree-clusters-boundaries-in-ty-tokentree-sequence
+[Finite State Machine]: https://en.wikipedia.org/wiki/Finite-state_machine
+[:ty TokenTree cluster]: ./index.html#ty-tokentree-cluster
+[:ty TokenTree cluster sequence]: ./index.html#ty-tokentree-cluster-sequence
+[:ty TokenStream]: ./index.html#ty-tokenstream
+
