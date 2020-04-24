@@ -30,10 +30,10 @@ impl <T> TysCountingFSMForTyTtClusterSeq<T> {
     /// extern crate proc_macro2;
     /// extern crate quote;
     /// extern crate proc_macro_hack;
-    /// extern crate tys_counting_fsm_for_ty_tt_cluster_seq;
+    /// extern crate TCFSMFTTTCS;
     /// 
     /// use quote::quote;
-    /// use tys_counting_fsm_for_ty_tt_cluster_seq::TysCountingFSMForTyTtClusterSeq;
+    /// use TCFSMFTTTCS::TysCountingFSMForTyTtClusterSeq;
     /// 
     /// // TODO: Switch out from proc_macro_hack and edit documentation when
     /// //"error: procedural macros cannot be expanded to expressions" is resloved.
@@ -71,11 +71,11 @@ where T :std::default::Default
     /// 
     /// Basic usage:
     /// ```rust
-    /// extern crate tys_counting_fsm_for_ty_tt_cluster_seq;
-    /// use tys_counting_fsm_for_ty_tt_cluster_seq::TysCountingFSMForTyTtClusterSeq;
+    /// extern crate TCFSMFTTTCS;
+    /// use TCFSMFTTTCS::TysCountingFSMForTyTtClusterSeq;
     /// 
-    /// let tys_counting_fsm_for_ty_tt_cluster_seq = TysCountingFSMForTyTtClusterSeq::<usize>::new();
-    /// let initial_value :usize = tys_counting_fsm_for_ty_tt_cluster_seq.get_count();
+    /// let TCFSMFTTTCS = TysCountingFSMForTyTtClusterSeq::<usize>::new();
+    /// let initial_value :usize = TCFSMFTTTCS.get_count();
     /// assert_eq!(0, initial_value);
     /// ```
     /// 
@@ -118,10 +118,10 @@ where T: std::ops::AddAssign + One
     /// extern crate proc_macro2;
     /// extern crate quote;
     /// extern crate proc_macro_hack;
-    /// extern crate tys_counting_fsm_for_ty_tt_cluster_seq;
+    /// extern crate TCFSMFTTTCS;
     /// 
     /// use quote::quote;
-    /// use tys_counting_fsm_for_ty_tt_cluster_seq::TysCountingFSMForTyTtClusterSeq;
+    /// use TCFSMFTTTCS::TysCountingFSMForTyTtClusterSeq;
     /// 
     /// // TODO: Switch out from proc_macro_hack and edit documentation when
     /// //"error: procedural macros cannot be expanded to expressions" is resloved.
@@ -180,19 +180,19 @@ where T: std::ops::AddAssign + One
     /// extern crate proc_macro2;
     /// extern crate quote;
     /// extern crate proc_macro_hack;
-    /// extern crate tys_counting_fsm_for_ty_tt_cluster_seq;
+    /// extern crate TCFSMFTTTCS;
     /// 
     /// use quote::quote;
-    /// use tys_counting_fsm_for_ty_tt_cluster_seq::TysCountingFSMForTyTtClusterSeq;
+    /// use TCFSMFTTTCS::TysCountingFSMForTyTtClusterSeq;
     /// 
     /// // TODO: Switch out from proc_macro_hack and edit documentation when
     /// //"error: procedural macros cannot be expanded to expressions" is resloved.
     /// // note: see issue #54727 <https://github.com/rust-lang/rust/issues/54727> for more information
     /// #[proc_macro_hack]
     /// pub unsafe fn unsafe_count_tys_in_ty_ts() {
-    ///     let tys_counting_fsm_for_ty_tt_cluster_seq = TysCountingFSMForTyTtClusterSeq::<usize>::new();
+    ///     let TCFSMFTTTCS = TysCountingFSMForTyTtClusterSeq::<usize>::new();
     ///     let tys_count :usize = unsafe {
-    ///         tys_counting_fsm_for_ty_tt_cluster_seq.unsafe_into_iter_transition proc_macro2::TokenStream::from(input)
+    ///         TCFSMFTTTCS.unsafe_into_iter_transition proc_macro2::TokenStream::from(input)
     ///     }
     ///     let tys_count :usize = proc_macro2::TokenStream::from(input)
     ///         .into_iter()
