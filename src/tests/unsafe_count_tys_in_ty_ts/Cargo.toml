@@ -10,7 +10,7 @@ edition = "2018"
 proc-macro2 = "1.0.10"
 quote = "1.0.3"
 proc-macro-hack = "0.5.15"
-TCFSMFTTTCS = "0.1.2"
+TCFSMFTTTCS = "0.1.1"
 
 [lib]
 proc-macro = true

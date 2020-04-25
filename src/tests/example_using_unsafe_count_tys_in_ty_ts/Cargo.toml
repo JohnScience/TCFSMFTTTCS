@@ -8,4 +8,6 @@ edition = "2018"
 
 [dependencies]
 proc-macro-hack = "0.5.15"
+#unsafe_count_tys_in_ty_ts = "0.1.0"
+identify-tts = "0.1.0"
 unsafe_count_tys_in_ty_ts = {path="../unsafe_count_tys_in_ty_ts"}
